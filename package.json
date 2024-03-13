@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=prod node index",
     "dev": "NODE_ENV=dev nodemon index",
-    "test": "jest"
+    "test": "jest --forceExit"
   },
   "keywords": [],
   "author": "Deepak Tomar",
