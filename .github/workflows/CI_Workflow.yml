@@ -24,6 +24,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Create .env file
+      working-directory: ./
+      run: |
+        touch .env
+          echo MONGO_DB_URL=${{ secrets.MONGO_DB_URL }} >> .env
+          echo MONGO_DB_NAME=${{ secrets.MONGO_DB_NAME }} >> .env
+          cat .env
     - name: Test Product Service
       working-directory: ./
       run: |
