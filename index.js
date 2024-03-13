@@ -8,8 +8,8 @@ dotenv.config();
 
 const completeURL = `${process.env.MONGO_DB_URL}${process.env.MONGO_DB_NAME}`;
 
-console.log(`process.env.MONGO_DB_URL ${process.env.MONGO_DB_URL}`);
-console.log(`process.env.MONGO_DB_NAME ${process.env.MONGO_DB_NAME}`);
+console.log("process.env.MONGO_DB_URL",process.env.MONGO_DB_URL);
+console.log("process.env.MONGO_DB_NAME",process.env.MONGO_DB_NAME);
 
 const PORT = 8000;
 
