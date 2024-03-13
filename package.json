@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --inspect=9230 index",
-    "start": "node index",
+    "start": "NODE_ENV=prod node index",
+    "dev": "NODE_ENV=dev nodemon index",
     "test": "jest"
   },
   "keywords": [],
