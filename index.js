@@ -1,5 +1,4 @@
 const express = require("express");
-// const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const { connectDB } = require("./src/db.config");
 const productRouter = require("./src/routes");
@@ -11,7 +10,6 @@ const PORT = 8000;
 
 const app = express();
 
-// app.use(bodyParser.json());
 app.use(express.urlencoded());
 
 connectDB(completeURL).then(() => {
